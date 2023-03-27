@@ -1,0 +1,109 @@
+.word-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding-left: 0;
+    list-style: none;
+    line-height: 3rem;
+}
+
+.word-cloud__list-item {
+    &:nth-child(2n+1) {
+        .word-cloud__item {
+            color: $cyan;
+
+            &::before {
+                background-color: $cyan;
+            }
+        }
+    } 
+
+    &:nth-child(3n+1) {
+        .word-cloud__item {
+            color: $magenta;
+
+            &::before {
+                background-color: $magenta;
+            }
+        }
+    }
+
+    &:nth-child(4n+1) {
+        .word-cloud__item {
+        color: $yellow;
+
+        &::before {
+            background-color: $yellow;
+        }
+        }
+    }
+}
+
+
+.word-cloud__item {
+    --size: 4;
+    color: $basic-white;
+    font-size: calc(var(--size) * 0.25rem + 0.5rem);
+    display: block;
+    padding: 0.125rem 0.25rem;
+    position: relative;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+
+    &[data-weight="1"] {
+        --size: 1;
+    }
+
+    &[data-weight="2"] {
+        --size: 2;
+    }
+
+    &[data-weight="3"] {
+        --size: 3;
+    }
+
+    &[data-weight="4"] {
+        --size: 4;
+    }
+
+    &[data-weight="5"] {
+        --size: 6;
+    }
+
+    &[data-weight="6"] {
+        --size: 8;
+    }
+
+    &[data-weight="7"] {
+        --size: 10;
+    }
+
+    &[data-weight="8"] {
+        --size: 13;
+    }
+
+    &[data-weight="9"] {
+        --size: 16;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 0;
+        height: 100%;
+        background-color: $basic-white;
+        transform: translate(-50%, 0);
+        opacity: 0.15;
+        transition: width 0.25s;
+    }
+
+    &:hover {
+        &::before {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,127 @@
+.sliding-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 30px);  // because of overflow - inner container has padding
+    height: calc(200% + 80px);  // because of height of sliding elements
+    z-index: 0;
+    opacity: 1;
+    overflow-y: hidden;
+}
+
+.sliding-background__container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1170px;
+}
+
+.sliding-background__wrapper,
+.sliding-background__container {
+    height: 100%;
+}
+
+.sliding-background__line-item {
+    float: left;
+    width: 25%;
+    height: 100%;
+    box-sizing: border-box;
+    border-right: 1px solid $background-grey;
+    height: 100%;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 3px;
+        height: 30px;
+        left: -2px;
+        background-color: $cyan;
+        opacity: .5;
+    }
+
+    &:nth-of-type(1) {
+        border-left: 1px solid rgba(153, 153, 153, 0.09);
+        &::before {
+            top: 0;
+            animation: scroll1 16s ease-out infinite;
+        }
+    }
+
+    &:nth-of-type(2) {
+        &::before {
+            bottom: 0;
+            animation: scroll2 16s ease-out infinite;
+        }
+    }
+
+    &:nth-of-type(3) {
+        &::before {
+            top: 0;
+            animation: scroll1 16s ease-out infinite;
+            animation-delay: -8s;
+        }
+    }
+
+    &:nth-of-type(4) {
+        &::before {
+            bottom: 0;
+            animation: scroll2 16s ease-out infinite;
+            animation-delay: -8s;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 3px;
+            height: 30px;
+            left: calc(100% - 2px);
+            background-color: $cyan;
+            opacity: .5;
+            animation: scroll1 16s ease-out infinite;
+            animation-delay: -4s;
+        }
+    }
+}
+
+@-webkit-keyframes scroll1 {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 100%;
+    }
+}
+
+@keyframes scroll1 {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 100%;
+    }
+}
+
+@-webkit-keyframes scroll2 {
+    0% {
+        bottom: 0;
+    }
+
+    100% {
+        bottom: 100%;
+    }
+}
+
+@keyframes scroll2 {
+    0% {
+        bottom: 0;
+    }
+
+    100% {
+        bottom: 100%;
+    }
+}

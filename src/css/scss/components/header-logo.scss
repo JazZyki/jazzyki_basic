@@ -1,0 +1,29 @@
+.header-logo {
+    position: relative;
+    z-index: 10000;
+}
+
+.header-logo__image-wrapper {
+    position: fixed;
+    top: 10px;
+    left: calc(50% - 63px);
+    width: 120px;
+    height: 120px;
+    background-color: $basic-white;
+    margin-top: -74px;
+    padding: 3px;
+    box-shadow: 0 0 10px $basic-black;
+    transform: rotate(45deg);
+}
+
+.header-logo__link {
+	position: absolute;
+	top: 60px;
+    left: 60px;
+    transform: rotate(-45deg);
+}
+
+.header-logo__image {
+    width: 60px;
+    height: 60px;
+}

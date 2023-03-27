@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;700&family=Roboto+Condensed:wght@400;700&display=swap');
+
+/* Variables */
+$font-roboto: 'Roboto Condensed', sans-serif;
+$font-oswald: 'Oswald', sans-serif;
+
+*, ::before, ::after {
+	box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #030011;
+    background: linear-gradient(180deg, #030011 0%, #001053 100%);
+    color: #fff;
+    font-size: 16px;
+    font-family: $font-roboto;
+}
+
+h1 {
+    font-family: $font-oswald;
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+p {
+    margin: 0 0 1.5rem 0;
+    font-size: 1.3rem;
+}
+
+.text--small-text {
+    font-size: 1rem;
+}

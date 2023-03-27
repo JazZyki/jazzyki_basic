@@ -1,0 +1,43 @@
+.block-layout {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	gap: 3rem;
+}
+
+.block-layout__block {
+    width: 50%;
+}
+
+.block-layout--right-block {
+	display: flex;
+	align-items: flex-end;
+	flex-direction: column;
+}
+
+.block-layout__main-heading {
+	width: 100%;
+	margin: 0;
+	font-size: 48px;
+	line-height: 1;
+	font-weight: normal;
+}
+
+.block-layout__sub-heading {
+	display: inline-block;
+	margin-top: -7px;
+	margin-bottom: 20px;
+	padding: 0 5px;
+	font-size: 2rem;
+	font-weight: normal;
+	width: fit-content;
+}
+
+.block-layout__sub-heading--aboutme {
+	background-color: $magenta;
+	box-shadow: 4px 4px 0 #f0f7;
+}
+
+.block-layout--right {
+	text-align: right;
+}

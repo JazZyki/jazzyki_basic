@@ -1,22 +1,157 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
-        <script src="" async defer></script>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Osobní portfolio - Jakub Zykl</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="src/css/scss/main.css">
+    <script src="https://kit.fontawesome.com/20100566aa.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="sliding-background">
+        <div class="sliding-background__container">
+            <div class="sliding-background__wrapper">
+                <div class="sliding-background__line-item">
+                </div>
+                <div class="sliding-background__line-item">
+                </div>
+                <div class="sliding-background__line-item">
+                </div>
+                <div class="sliding-background__line-item">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="header-logo">
+        <div class="header-logo__image-wrapper">
+            <a class="header-logo__link" href="https://jazzyki.cz/" class="custom-logo-link" rel="home"
+                aria-current="page">
+                <img class="header-logo__image" src="src/img/logoME.png" width="500" height="500">
+            </a>
+        </div>
+    </header>
+
+    <section id="first-section" class="section section--first-section">
+        <div class="main-info">
+            <div class="main-info__wrapper">
+                <h1 class="main-info__heading">
+                    <span class="main-info__heading--first-word">Jmenuji&nbsp;se</span>
+                    Jakub Zykl
+                </h1>
+                <div class="main-info__text">Frontend kodér</div>
+                <a class="button button--main-info" href="#">
+                    <span class="button__icon"></span>Chci vytvořit web </a>
+            </div>
+        </div>
+
+    </section>
+    <section id="second-section" class="section section--second-section">
+        <div class="block-layout">
+            <div class="block-layout__block block-layout--left-block">
+                <p>Grafikou a tvorbou webů se zabývám více než patnáct let.</p>
+                <p>Začínal jsem jako grafik-ilustrátor v časopise TÝDEN a postupně jsem poznal i jiné zaměstnavatele –
+                    MAFRA a. s., Mountfield, reklamní agenturu RedBrand a další.</p>
+                <p>V současné době pracuji jako freelance front-end kodér, mezi mé klienty patří hlavně ČSOB řada
+                    dalších menších společností a jednotlivců (IBC Praha, Budžak Building).</p>
+                <p>S weby si „hraji“ i mimo pracovní dobu. Snažím se neustále zdokonalovat a objevovat nové
+                    funkcionality.</p>
+                <ul class="word-cloud">
+                    <li class="word-cloud__list-item"><a class="word-cloud__item" data-weight="5">Illustrator</a></li>
+                    <li class="word-cloud__list-item"><a class="word-cloud__item" data-weight="1">GIT</a></li>
+                    <li class="word-cloud__list-item"><a class="word-cloud__item" data-weight="7">Sass</a></li>
+                    <li class="word-cloud__list-item"><a class="word-cloud__item" data-weight="8">HTML</a></li>
+                    <li class="word-cloud__list-item"><a class="word-cloud__item" data-weight="6">FlexBox</a></li>
+                    <li class="word-cloud__list-item"><a class="word-cloud__item" data-weight="9">InDesign</a></li>
+                    <li class="word-cloud__list-item"><a class="word-cloud__item" data-weight="5">Joomla</a></li>
+                    <li class="word-cloud__list-item"><a class="word-cloud__item" data-weight="2">Grid</a></li>
+                    <li class="word-cloud__list-item"><a class="word-cloud__item" data-weight="1">Bootstrap</a></li>
+                    <li class="word-cloud__list-item"><a class="word-cloud__item" data-weight="4">JavaScript</a></li>
+                    <li class="word-cloud__list-item"><a class="word-cloud__item" data-weight="1">Animation</a></li>
+                    <li class="word-cloud__list-item"><a class="word-cloud__item" data-weight="7">WordPress</a></li>
+                    <li class="word-cloud__list-item"><a class="word-cloud__item" data-weight="8">CSS</a></li>
+                    <li class="word-cloud__list-item"><a class="word-cloud__item" data-weight="3">jQuery</a></li>
+                    <li class="word-cloud__list-item"><a class="word-cloud__item" data-weight="5">Photoshop</a></li>
+                </ul>
+            </div>
+
+            <div class="block-layout__block block-layout--right-block block-layout--aboutme">
+                <h2 class="block-layout__main-heading block-layout--right">15+ let</h2>
+                <h3 class="block-layout__sub-heading block-layout--right block-layout__sub-heading--aboutme">práce v
+                    oboru</h3>
+                <div class="progress-bar-block">
+                    <div class="progress-bar-block__progress-bar-wrapper">
+                        <div class="progress-bar-block__progress-bar">
+                            <span class="progress-bar-block__title">
+                                Adobe Illustrator <span class="progress-bar-block__title--value">95%</span>
+                            </span>
+                            <span class="progress-bar-block__bar" style="width: 95%;"></span>
+                        </div>
+                    </div>
+                    <div class="progress-bar-block__progress-bar-wrapper">
+                        <div class="progress-bar-block__progress-bar">
+                            <span class="progress-bar-block__title">
+                                Adobe InDesign <span class="progress-bar-block__title--value">90%</span>
+                            </span>
+                            <span class="progress-bar-block__bar" style="width: 90%;"></span>
+                        </div>
+                    </div>
+                    <div class="progress-bar-block__progress-bar-wrapper">
+                        <div class="progress-bar-block__progress-bar">
+                            <span class="progress-bar-block__title">
+                                Adobe Photoshop <span class="progress-bar-block__title--value">90%</span>
+                            </span>
+                            <span class="progress-bar-block__bar" style="width: 90%;"></span>
+                        </div>
+                    </div>
+                    <div class="progress-bar-block__progress-bar-wrapper">
+                        <div class="progress-bar-block__progress-bar">
+                            <span class="progress-bar-block__title">
+                                HTML <span class="progress-bar-block__title--value">95%</span>
+                            </span>
+                            <span class="progress-bar-block__bar" style="width: 95%;"></span>
+                        </div>
+                    </div>
+                    <div class="progress-bar-block__progress-bar-wrapper">
+                        <div class="progress-bar-block__progress-bar">
+                            <span class="progress-bar-block__title">
+                                CSS <span class="progress-bar-block__title--value">90%</span>
+                            </span>
+                            <span class="progress-bar-block__bar" style="width: 90%;"></span>
+                        </div>
+                    </div>
+                    <div class="progress-bar-block__progress-bar-wrapper">
+                        <div class="progress-bar-block__progress-bar">
+                            <span class="progress-bar-block__title">
+                                JavaScript <span class="progress-bar-block__title--value">75%</span>
+                            </span>
+                            <span class="progress-bar-block__bar" style="width: 75%;"></span>
+                        </div>
+                    </div>
+                    <div class="progress-bar-block__progress-bar-wrapper">
+                        <div class="progress-bar-block__progress-bar">
+                            <span class="progress-bar-block__title">
+                                CMS (WordPress, Joomla) <span class="progress-bar-block__title--value">75%</span>
+                            </span>
+                            <span class="progress-bar-block__bar" style="width: 75%;"></span>
+                        </div>
+                    </div>
+                </div>
+                <p class="text--small-text">Všechny uvedené procentuelní hodnoty jsou,
+                    pochopitelně, subjektivní.<br>Nikdy nejsem ochoten přiznat skutečnost, že něco umím na sto
+                    procent. To by byla lež.</p>
+                <a class="button button--my-cv" href="src/img/cv_jakubZykl.pdf" target="_blank"
+                    rel="noreferrer noopener">
+                    <span class="button__icon"></span>Můj životopis</a>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+</body>
+
 </html>
