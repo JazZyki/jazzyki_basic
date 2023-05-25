@@ -1,3 +1,3 @@
 # Jazzyki
 
-Testing markup and style for job opportunity in web devel company.
+Testing markup and style for my personál folio .
